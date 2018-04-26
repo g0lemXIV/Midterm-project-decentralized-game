@@ -13,16 +13,16 @@ For more informstion visit : [theschool of AI](https://www.theschool.ai)
 
 **Introduction**
 
->Meet your Instructors
-Web 3.0 Overview
-Ethereum Installation Steps
-[A Basic Overview of the Ethereum Architecture](https://ethereumbuilders.gitbooks.io/guide/content/en/what_is_ethereum.html)
-Hash Functions Explained
-Reading Assignment (Bitcoin)
-Homework (Setup an Ethereum Miner)
-Live Stream (Building a Simple Web Store)
-Supplementary for Building a Simple Web Store
-Private Blockchain setup screencast
+>Meet your Instructors  
+Web 3.0 Overview  
+Ethereum Installation Steps  
+[A Basic Overview of the Ethereum Architecture](https://ethereumbuilders.gitbooks.io/guide/content/en/what_is_ethereum.html)  
+Hash Functions Explained  
+Reading Assignment (Bitcoin)  
+Homework (Setup an Ethereum Miner)  
+Live Stream (Building a Simple Web Store)  
+Supplementary for Building a Simple Web Store  
+Private Blockchain setup screencast  
 
 **Decentralized Chat**
 
