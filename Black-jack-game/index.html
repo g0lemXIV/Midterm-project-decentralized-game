@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Decentralized Black Jack game</h1>
+
+        <h2 id="instructor"></h2>
+        <h2 id="CasinoFee"></h2>
+        <img id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif">
+
+        <label for="name" class="col-lg-2 control-label">Address</label>
+        <input id="name" type="text">
+
+        <button id="Standbutton">Stand</button>
+
+        <label for="name" class="col-lg-2 control-label">Amount of bet</label>
+        <input id="age" type="text">
+
+        <button id="Betbutton">Bet</button>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script>
+       if(typeof web3 !== 'undefined') {
+             web3 = new Web3(web3.currentProvider);
+      } else {
+            web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+      }
+      web3.eth.defaultAccount = web3.eth.accounts[0];
+      var TwentyOne = web3.eth.contract([
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_bet",
+				"type": "uint256"
+			}
+		],
+		"name": "bet",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "croupierBet",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_player",
+				"type": "address"
+			}
+		],
+		"name": "stand",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "player",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "playerCard",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "bet",
+				"type": "uint256"
+			}
+		],
+		"name": "Table",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_fee",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "card",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_player",
+				"type": "address"
+			}
+		],
+		"name": "casinoBudget",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "casinoFee",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "player",
+				"type": "address"
+			}
+		],
+		"name": "checkPlayerExists",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "countCard",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "distributedTime",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "players",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "playersInfo",
+		"outputs": [
+			{
+				"name": "amountBet",
+				"type": "uint256"
+			},
+			{
+				"name": "sumOfCard",
+				"type": "uint256"
+			},
+			{
+				"name": "countWin",
+				"type": "uint16"
+			},
+			{
+				"name": "hit",
+				"type": "uint16"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "totalCard",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]);
+      var croupier = TwentyOne.at('0xa86efb3867d9d82a9c5540825eabc55d74dd217c');
+      console.log(croupier);
+
+      var tableEvent = croupier.Table();
+
+      tableEvent.watch(function(error, result) {
+            if (!error){
+                  $("#loader").hide();
+                  $('#instructor').html(result.args.player + " adddress and ( " + result.args.playerCard + " sum of player cards )");
+            } else {
+                  $("#loader").hide();
+                  console.log(error);
+            }
+      });
+
+      croupier.casinoFee(function(error, result) {
+            if (!error){
+                  $('#CasinoFee').html(result);
+            } else {
+                  $("#loader").hide();
+                  console.log(error);
+            }
+      });
+
+      $("#Betbutton").click(function() {
+            $("#loader").show();
+            croupier.bet($("#age").val(), (err, res) => {
+                  if(err) {
+                        $("#loader").hide();
+                        console.log("oh no");
+                  }
+            });
+      });
+      $("#Standbutton").click(function() {
+            $("#loader").show();
+            croupier.stand($("#name").val(), (err, res) => {
+                  if(err) {
+                        $("#loader").hide();
+                        console.log(err);
+                  }
+            });
+      });
+
+    </script>
+
+</body>
+</html>
