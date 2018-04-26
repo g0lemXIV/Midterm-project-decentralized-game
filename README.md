@@ -42,6 +42,8 @@ For more informstion visit : [theschool of AI](https://www.theschool.ai)
 [A Guide to the Decentralized News Network (Siraj)](https://github.com/llSourcell/DNN/blob/master/DNN.ipynb)  
 [IPFS Homework](https://gateway.ipfs.io/ipfs/QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o)  
 [IPFS Reading Assignment](https://arxiv.org/pdf/1407.3561.pdf)  
+[Host Your IPFS Files Online Forever](https://medium.com/@merunasgrincalaitis/how-to-host-your-ipfs-files-online-forever-f0c56b9b5398)  
+[Weekend with IPFS](https://medium.com/a-weekend-with/a-weekend-with-ipfs-9f2647fc231)  
 
 **Decentralized Games**
  
