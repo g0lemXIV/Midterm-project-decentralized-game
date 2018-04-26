@@ -29,9 +29,8 @@ Clone or download repository and move to project main folder
 
 Run testrpc in terminal or ganache gui.  
 You should see Mnemonic phrase ( 12 words ). Click on Metamask plugin and restore from seen phrase. Now paste mnemonic, change password and login into ethereum wallet.  
-Change MetaMask test network to PrivateNetwork at port 8545.
-**You should see something like this:**  
-
+Change MetaMask test network to PrivateNetwork at port 8545.  
+You should see something like this: 
 ![](https://i.stack.imgur.com/GzZcI.png)
 
  Copy */casino-game-learn/contracts/Casino.sol* and paste in to **[remix.ethereum](http://remix.ethereum.org) compiler.**    
@@ -48,4 +47,3 @@ Create Your contract, you should have something like this :
 
 
 
-**Free Software, Hell Yeah!**
