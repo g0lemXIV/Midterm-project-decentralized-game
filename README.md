@@ -13,48 +13,42 @@ For more informstion visit : [theschool of AI](https://www.theschool.ai)
 
 **Introduction**
 
->Meet your Instructors
-Web 3.0 Overview  
-Ethereum Installation Steps  
+>[Web 3.0 Overview](https://www.youtube.com/watch?v=aPVmd7SyKfQ&t=53s)    
+[Ethereum Installation Steps](https://github.com/ethereum/go-ethereum/wiki)  
 [A Basic Overview of the Ethereum Architecture](https://ethereumbuilders.gitbooks.io/guide/content/en/what_is_ethereum.html)  
-Hash Functions Explained  
-Reading Assignment (Bitcoin)  
-Homework (Setup an Ethereum Miner)  
-Live Stream (Building a Simple Web Store)  
-Supplementary for Building a Simple Web Store  
-Private Blockchain setup screencast  
+[Hash Functions Explained](https://www.youtube.com/watch?v=KqqOXndnvic)  
+[Reading Assignment (Bitcoin)](https://github.com/bitcoinbook/bitcoinbook)  
+[Homework (Setup an Ethereum Miner)](https://hackernoon.com/ethereum-mining-on-aws-in-5mins-713f5a40949f)  
+[Live Stream (Building a Simple Web Store)](https://github.com/llSourcell/simple_auction)  
+  
 
 **Decentralized Chat**
 
->Building Your First Whisper Chat App  
-Supplementary for Ethereum Whisper Chat dApp  
-Sending Messages with Geth + Whisper  
-Supplementary for Whisper - Off chain P2P communication protocol  
-Scalability Issues  
-Peer to Peer Chat  
-Solidity Explained  
-Reading Assignment (Semantics of the EVM)  
-Homework (Chat between 2 Whisper Nodes)  
+>[Building Your First Whisper Chat App](https://www.youtube.com/watch?v=vVsIHCTGjsE&t=5s)  
+[Supplementary for Ethereum Whisper Chat dApp](https://github.com/gballet/whisper-chat-example)  
+[Sending Messages with Geth + Whisper](https://github.com/ethereum/meteor-dapp-whisper-chat-client)  
+[Supplementary for Whisper - Off chain P2P communication protocol](https://github.com/ethereum/go-ethereum/wiki/Whisper)  
+[Scalability Issues](https://medium.com/loom-network/the-state-of-ethereum-scaling-march-2018-74ac08198a36)  
+[Peer to Peer Chat](https://codepen.io/temasys/pen/LGpMxj)  
+[Solidity Explained](https://www.youtube.com/channel/UCaWes1eWQ9TbzA695gl_PtA)  
+[Semantics of the EVM](https://www.ideals.illinois.edu/bitstream/handle/2142/97207/hildenbrandt-saxena-zhu-rodrigues-guth-daian-rosu-2017-tr.pdf)
 
 **Decentralized News**
 
->Decentralized Storage using Ethereum + IPFS  
-Supplementary for Decentralized Storage using Ethereum + IPFS  
-IPFS Explained  
-IPFS Module Guide  
-A Guide to the Decentralized News Network (Siraj)  
-IPFS Homework  
-IPFS Reading Assignment  
-Live Stream Q&A  
+>[Decentralized Storage using Ethereum + IPFS](https://www.youtube.com/watch?v=BA2rHlbB5i0)  
+[Supplementary for Decentralized Storage using Ethereum + IPFS](https://github.com/llSourcell/IPFS_Ethereum_Storage)  
+[IPFS Explained](https://www.youtube.com/watch?v=skMTdSEaCtA)  
+[IPFS Module Guide](https://github.com/llSourcell/DNN/blob/master/Module_guide.md)  
+[A Guide to the Decentralized News Network (Siraj)](https://github.com/llSourcell/DNN/blob/master/DNN.ipynb)  
+[IPFS Homework](https://gateway.ipfs.io/ipfs/QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o)  
+[IPFS Reading Assignment](https://arxiv.org/pdf/1407.3561.pdf)  
 
 **Decentralized Games**
-
-[Decentralized Games](https://github.com/llSourcell/Decentralized_Games)  
->Building Cryptokitties  
-Example Dapp Games ideas  
-Solidity Reading Assignment  
-Decentralized Game Midterm Project  
-Live Stream Q&A (Siraj)  
+ 
+>[Building Cryptokitties](https://cryptozombies.io/)  
+[Example Dapp Games ideas]((https://github.com/llSourcell/Decentralized_Games)  
+[Solidity Reading Assignment](https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html)  
+[Decentralized Game Midterm Project](https://github.com/g0lemXIV/Midterm-project-decentralized-game/tree/master/casino-game-learn)  
 
 **Decentralized Rides**
 
