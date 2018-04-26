@@ -46,7 +46,7 @@ For more informstion visit : [theschool of AI](https://www.theschool.ai)
 **Decentralized Games**
  
 >[Building Cryptokitties](https://cryptozombies.io/)  
-[Example Dapp Games ideas]((https://github.com/llSourcell/Decentralized_Games)  
+[Example Dapp Games ideas](https://github.com/llSourcell/Decentralized_Games)  
 [Solidity Reading Assignment](https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html)  
 [Decentralized Game Midterm Project](https://github.com/g0lemXIV/Midterm-project-decentralized-game/tree/master/casino-game-learn)  
 
