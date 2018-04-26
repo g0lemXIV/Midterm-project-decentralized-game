@@ -1,4 +1,4 @@
-const address = '0x7105df9c23bd45ef4a682cf10e8d9e1b7de62cb3'
+const address = '0x8fd76a6648e94604d61c4574ca244e1e072b7a93'
 const ABI = [
 	{
 		"constant": false,
@@ -41,11 +41,6 @@ const ABI = [
 		"type": "event"
 	},
 	{
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "fallback"
-	},
-	{
 		"inputs": [
 			{
 				"name": "_minBet",
@@ -59,6 +54,11 @@ const ABI = [
 		"payable": true,
 		"stateMutability": "payable",
 		"type": "constructor"
+	},
+	{
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "fallback"
 	},
 	{
 		"constant": true,

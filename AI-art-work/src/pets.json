@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Frieda",
-    "picture": "images/scottish-terrier.jpeg",
+    "picture": "images/2.jpeg",
     "age": 3,
     "breed": "Scottish Terrier",
     "location": "Lisco, Alabama"
@@ -10,7 +10,7 @@
   {
     "id": 1,
     "name": "Gina",
-    "picture": "images/scottish-terrier.jpeg",
+    "picture": "images/3.jpeg",
     "age": 3,
     "breed": "Scottish Terrier",
     "location": "Tooleville, West Virginia"
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Collins",
-    "picture": "images/french-bulldog.jpeg",
+    "picture": "images/4.jpeg",
     "age": 2,
     "breed": "French Bulldog",
     "location": "Freeburn, Idaho"
