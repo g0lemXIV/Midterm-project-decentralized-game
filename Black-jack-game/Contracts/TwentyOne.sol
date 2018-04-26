@@ -23,7 +23,8 @@ contract Croupier {
     // Map address and Players
     mapping(address => Player) public playersInfo;
 
-    constructor (uint256 _fee) public {
+
+    function Croupier (uint256 _fee) public {
         require(_fee > 0);
         owner = msg.sender;
         casinoFee = _fee;
@@ -60,7 +61,7 @@ contract Croupier {
     function croupierBet() public returns (uint) {
         require(owner == msg.sender);
         totalCard += generateCard(owner, casinoFee);
-        emit Table(owner, totalCard, casinoFee);
+        Table(owner, totalCard, casinoFee);
         return totalCard;
     }
 
@@ -78,7 +79,7 @@ contract Croupier {
         } else {
             generateBet(_bet, msg.sender);
         }
-        emit Table(msg.sender, playersInfo[msg.sender].sumOfCard, playersInfo[msg.sender].amountBet);
+        Table(msg.sender, playersInfo[msg.sender].sumOfCard, playersInfo[msg.sender].amountBet);
         players.push(msg.sender);
     }
 
@@ -99,20 +100,19 @@ contract Croupier {
     }
 
     // Check card
-    function stand(address _player) external returns (bool){
+    function stand(address _player) public{
         uint256 _sumOfPlayerCard = playersInfo[_player].sumOfCard;
         uint256 _amountOfBet = playersInfo[_player].amountBet;
         // Is it game rules are met
         require(_sumOfPlayerCard <= 21);
+        // Chceck casino budget is higher than sum of player bet
         require(casinoBudget(_player));
         if (_sumOfPlayerCard > totalCard) {
-            _player.transfer(_amountOfBet * 2);
+            _player.transfer(casinoFee);
             resetData();
-            return true;
         } else {
             owner.transfer(_amountOfBet);
             resetData();
-            return false;
        }
     }
 }
