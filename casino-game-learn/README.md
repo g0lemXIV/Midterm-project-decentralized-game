@@ -30,13 +30,12 @@ Clone or download repository and move to project main folder
 Run testrpc in terminal or ganache gui.  
 You should see Mnemonic phrase ( 12 words ). Click on Metamask plugin and restore from seen phrase. Now paste mnemonic, change password and login into ethereum wallet.  
 Change MetaMask test network to PrivateNetwork at port 8545.  
-You should see something like this: 
 ![](https://i.stack.imgur.com/GzZcI.png)
 
  Copy */casino-game-learn/contracts/Casino.sol* and paste in to **[remix.ethereum](http://remix.ethereum.org) compiler.**    
  Change Environment to InjectedWeb3, click okey. 
  
-Create Your contract, you should have something like this : 
+Create Your contract, you should have something like this:
  ![](https://screenshotscdn.firefoxusercontent.com/images/50864fb5-ea91-4b3d-9bce-fce32767d40c.png)
  
  In *./util/constants/casinoContract.js* change **address** and **ABI** to Yours.  
