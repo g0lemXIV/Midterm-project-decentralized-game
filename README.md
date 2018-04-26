@@ -13,7 +13,7 @@ For more informstion visit : [theschool of AI](https://www.theschool.ai)
 
 **Introduction**
 
-Meet your Instructors
+>Meet your Instructors
 Web 3.0 Overview
 Ethereum Installation Steps
 [A Basic Overview of the Ethereum Architecture](https://ethereumbuilders.gitbooks.io/guide/content/en/what_is_ethereum.html)
