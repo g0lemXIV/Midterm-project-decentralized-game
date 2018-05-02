@@ -56,9 +56,9 @@ For more informstion visit : [theschool of AI](https://www.theschool.ai)
 
 >[Building a Decentralized Ride Sharing App](https://github.com/llSourcell/Decentralized_Rides)  
 [Explaining the EVM](https://ethereum.github.io/yellowpaper/paper.pdf) 
-[Current price of gas](https://docs.google.com/spreadsheets/d/1m89CVujrQe5LAFJ8-YAUCcNK950dUzMQPMJBxRtGCqs/htmlview#)
-[Solidity Best Practices](https://consensys.github.io/smart-contract-best-practices/)
-[Transmute Framework Example](https://github.com/transmute-industries/ride-share-demo)
+[Current price of gas](https://docs.google.com/spreadsheets/d/1m89CVujrQe5LAFJ8-YAUCcNK950dUzMQPMJBxRtGCqs/htmlview#)  
+[Solidity Best Practices](https://consensys.github.io/smart-contract-best-practices/)  
+[Transmute Framework Example](https://github.com/transmute-industries/ride-share-demo)  
 
 **Decentralized Music**
 
